@@ -1,18 +1,26 @@
 {
   "format_version": 2,
   "header": {
-    "description": "Maxed Out Gear Pack - Get fully enchanted end-game gear with one command",
-    "name": "Maxed Out Gear Pack",
-    "uuid": "f4e8c9a1-7b2d-4a6f-9e3c-5d1b8f7a2e4c",
+    "description": "Enchants inventory items from your function command.",
+    "name": "Dragon Slimming Enchant Hook",
+    "uuid": "7a3b1182-4f11-4b1a-9642-4ee8b122cb43",
     "version": [1, 0, 0],
-    "min_engine_version": [1, 19, 0]
+    "min_engine_version": [1, 21, 0]
   },
   "modules": [
     {
-      "description": "Maxed Out Gear Data Module",
-      "type": "data",
-      "uuid": "a2f1d8e5-9c4b-4e7d-8a3f-6e2c9b1a5d7f",
-      "version": [1, 0, 0]
+      "description": "Script Module",
+      "type": "script",
+      "language": "javascript",
+      "uuid": "2d8f99e3-e841-4df2-bd32-8df7dca22e11",
+      "version": [1, 0, 0],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.13.0"
     }
   ]
 }
