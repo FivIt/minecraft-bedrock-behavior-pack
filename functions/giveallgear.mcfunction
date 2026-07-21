@@ -41,17 +41,17 @@ give @s golden_apple 64
 # Carrots x64
 give @s carrot 64
 
-# Splash Potion of Strength x2
-give @s splash_potion{Potion:"minecraft:strength"} 2
+# Splash Potion of Strength x16
+give @s splash_potion{Potion:"minecraft:strength"} 16
 
-# Splash Potion of Speed x2
-give @s splash_potion{Potion:"minecraft:swiftness"} 2
+# Splash Potion of Speed x16
+give @s splash_potion{Potion:"minecraft:swiftness"} 16
 
-# Potion of Slow Falling x2
-give @s potion{Potion:"minecraft:slow_falling"} 2
+# Potion of Slow Falling x16
+give @s potion{Potion:"minecraft:slow_falling"} 16
 
-# Splash Potion of Healing x2
-give @s splash_potion{Potion:"minecraft:healing"} 2
+# Splash Potion of Healing x38 (3 stacks + 8)
+give @s splash_potion{Potion:"minecraft:healing"} 38
 
 # Ender Pearls x3 stacks (192 total)
 give @s ender_pearl 64
@@ -69,17 +69,17 @@ give @s ender_chest 1
 
 # ===== DRAGON SLAYING UTILITIES (HARDCORE SAFE) =====
 
-# End Crystals for healing (give extra for dragon fight)
-give @s end_crystal 4
-
 # Blocks for building (Obsidian for safety)
 give @s obsidian 32
 
 # Healing Potions for backup
 give @s potion{Potion:"minecraft:healing"} 16
 
-# Milk bucket for potion effects (useful for healing)
+# Milk bucket for potion effects (useful for clearing effects)
 give @s milk_bucket 4
+
+# Pumpkin for enderman protection (wear on head to avoid aggro)
+give @s pumpkin 1
 
 # Success message
 tellraw @s {"text":"✓ Maxed Out Gear Pack loaded! Ready to slay the Ender Dragon on Hardcore!","color":"green"}
