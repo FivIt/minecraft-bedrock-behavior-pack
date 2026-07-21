@@ -22,5 +22,11 @@
       "version": [1, 0, 0],
       "entry": "scripts/main.js"
     }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.0.0"
+    }
   ]
 }
