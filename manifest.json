@@ -13,20 +13,6 @@
       "type": "data",
       "uuid": "a2f1d8e5-9c4b-4e7d-8a3f-6e2c9b1a5d7f",
       "version": [1, 0, 0]
-    },
-    {
-      "description": "Maxed Out Gear Script Module",
-      "type": "script",
-      "language": "javascript",
-      "uuid": "c7d3e9f2-5a1b-4c8e-6d2a-9f4e1c3b7a5d",
-      "version": [1, 0, 0],
-      "entry": "scripts/main.js"
-    }
-  ],
-  "dependencies": [
-    {
-      "module_name": "@minecraft/server",
-      "version": "1.0.0"
     }
   ]
 }
