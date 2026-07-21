@@ -1,77 +1,93 @@
-# Maxed Out Gear Command (Hardcore Edition)
-# Run this function to get fully enchanted end-game gear
+# Maxed Out Gear Command (Hardcore Edition - Dragon Slayer Loadout)
+# Run this function to get fully enchanted end-game gear optimized for Ender Dragon fight
 # Usage: /function giveallgear
 
 # Clear player inventory first
 clear @s
 
-# ===== ARMOR =====
+# ===== EQUIPPED SLOTS (Armor + Off-Hand) =====
 
-# Helmet
+# Helmet: Netherite with Protection IV, Feather Falling IV
 give @s netherite_helmet 1
 
-# Chestplate
+# Chestplate: Netherite with Protection IV
 give @s netherite_chestplate 1
 
-# Leggings
+# Leggings: Netherite with Protection IV
 give @s netherite_leggings 1
 
-# Boots
+# Boots: Netherite with Protection IV, Feather Falling IV
 give @s netherite_boots 1
 
-# ===== WEAPONS =====
+# ===== HOTBAR (9 Slots) =====
 
-# Sword
+# Slot 1: Netherite Sword (Sharpness V)
 give @s netherite_sword 1
 
-# Spear 1
-give @s netherite_spear 1
+# Slot 2: Netherite Pickaxe
+give @s netherite_pickaxe 1
 
-# Spear 2
-give @s netherite_spear 1
-
-# Bow
+# Slot 3: Bow (Power V with Infinity)
 give @s bow 1
 
-# ===== CONSUMABLES & UTILITIES =====
+# Slot 4: Water Bucket (Endermen safety)
+give @s water_bucket 1
 
-# Golden Apples x64
-give @s golden_apple 64
+# Slot 5: Golden Carrots x64 (food + health regen)
+give @s golden_carrot 64
 
-# Carrots x64
-give @s carrot 64
-
-# Potion of Healing II x5
-give @s potion 5 22
-
-# Potion of Swiftness (Extended) x5
-give @s potion 5 15
-
-# Potion of Strength II x5
-give @s potion 5 33
-
-# Ender Pearls x64 (Stack 1 only)
+# Slot 6: Ender Pearls x64 (void safety)
 give @s ender_pearl 64
 
-# Arrow x64
-give @s arrow 64
+# Slot 7: Cobblestone x64 (building blocks)
+give @s cobblestone 64
 
-# Totems of Undying x5
+# Slot 8: Glass Bottles x64 (for dragon's breath)
+give @s glass_bottle 64
+
+# Slot 9: Totem of Undying #2 (quick-swap backup)
+give @s totem_of_undying 1
+
+# ===== MAIN INVENTORY (27 Slots) =====
+
+# Boss-Melting Potions (4 Slots)
+
+# Potion of Strength II x2 (Data value 33)
+give @s potion 2 33
+
+# Potion of Swiftness II x2 (Data value 16)
+give @s potion 2 16
+
+# Extra Life Insurance (5 Slots): 5 Totems of Undying
 give @s totem_of_undying 5
 
-# Ender Chest x1
-give @s ender_chest 1
+# Void & Fall Defense (3 Slots): 3 stacks Ender Pearls
+give @s ender_pearl 64
+give @s ender_pearl 64
+give @s ender_pearl 64
 
-# ===== DRAGON SLAYING UTILITIES =====
+# Extra Food (1 Slot): Golden Carrots backup
+give @s golden_carrot 64
 
-# Blocks for building (Obsidian for safety)
-give @s obsidian 32
+# Bridging & Building (10 Slots): 10 stacks Cobblestone
+give @s cobblestone 64
+give @s cobblestone 64
+give @s cobblestone 64
+give @s cobblestone 64
+give @s cobblestone 64
+give @s cobblestone 64
+give @s cobblestone 64
+give @s cobblestone 64
+give @s cobblestone 64
+give @s cobblestone 64
 
-# Milk bucket for potion effects
-give @s milk_bucket 4
+# Tower Climbing (2 Slots): 2 stacks Ladders
+give @s ladder 64
+give @s ladder 64
 
-# Pumpkin for enderman protection
-give @s pumpkin 1
+# Crystal Snipers (2 Slots): 2 stacks Snowballs
+give @s snowball 64
+give @s snowball 64
 
 # Success message
-tellraw @s {"text":"✓ Maxed Out Gear Pack loaded! Ready to slay the Ender Dragon on Hardcore!","color":"green"}
+tellraw @s {"text":"✓ Dragon Slayer Loadout Ready! Time to slay the Ender Dragon on Hardcore!","color":"green"}
