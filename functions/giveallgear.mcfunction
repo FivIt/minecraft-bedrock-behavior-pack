@@ -1,4 +1,4 @@
-# Maxed Out Gear Command (Hardcore Edition - Dragon Slayer Loadout)
+# Maxed Out Gear Command ( Dragon Slimming Loadout)
 # Run this function to get fully enchanted end-game gear optimized for Ender Dragon fight
 # Usage: /function giveallgear
 
@@ -42,8 +42,8 @@ give @s ender_pearl 64
 # Slot 7: Cobblestone x64 (building blocks)
 give @s cobblestone 64
 
-# Slot 8: Glass Bottles x64 (for dragon's breath)
-give @s glass_bottle 64
+# Slot 8: Glass Bottles x16 (for dragon's breath)
+give @s glass_bottle 16
 
 # Slot 9: Totem of Undying #2 (quick-swap backup)
 give @s totem_of_undying 1
@@ -62,9 +62,9 @@ give @s potion 2 16
 give @s totem_of_undying 5
 
 # Void & Fall Defense (3 Slots): 3 stacks Ender Pearls
-give @s ender_pearl 64
-give @s ender_pearl 64
-give @s ender_pearl 64
+give @s ender_pearl 16
+give @s ender_pearl 16
+give @s ender_pearl 16
 
 # Extra Food (1 Slot): Golden Carrots backup
 give @s golden_carrot 64
@@ -90,4 +90,4 @@ give @s snowball 64
 give @s snowball 64
 
 # Success message
-tellraw @s {"text":"✓ Dragon Slayer Loadout Ready! Time to slay the Ender Dragon on Hardcore!","color":"green"}
+tellraw @s "text":"✓ Dragon Slimming Loadout Ready! Time to slay the Ender Dragon on Hardcore!","color":"green"
