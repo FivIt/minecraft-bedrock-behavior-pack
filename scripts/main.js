@@ -10,202 +10,215 @@ world.beforeEvents.chatSend.subscribe((event) => {
 });
 
 function giveMaxedGear(player) {
-  const inventory = player.container;
-  let slot = 0;
+  try {
+    const inventory = player.container;
+    let slot = 0;
 
-  // ===== ARMOR =====
+    // ===== ARMOR =====
 
-  // Helmet: Protection 4, Mending 1, Unbreaking 3, Respiration 3, Aqua Affinity
-  const helmet = new ItemStack("diamond_helmet", 1);
-  helmet.setProperty("minecraft:enchantments", {
-    enchantments: [
-      { id: "protection", level: 4 },
-      { id: "mending", level: 1 },
-      { id: "unbreaking", level: 3 },
-      { id: "respiration", level: 3 },
-      { id: "aqua_affinity", level: 1 }
-    ]
-  });
-  helmet.nameTag = "Maxed Helmet";
-  player.equip("Head", helmet);
+    // Helmet: Protection 4, Mending 1, Unbreaking 3, Respiration 3, Aqua Affinity
+    const helmet = inventory.getItem(slot);
+    if (helmet) {
+      helmet.typeId = "diamond_helmet";
+      helmet.amount = 1;
+    }
+    inventory.setItem(slot++, helmet);
 
-  // Chestplate: Protection 4, Mending 1, Unbreaking 3
-  const chestplate = new ItemStack("diamond_chestplate", 1);
-  chestplate.setProperty("minecraft:enchantments", {
-    enchantments: [
-      { id: "protection", level: 4 },
-      { id: "mending", level: 1 },
-      { id: "unbreaking", level: 3 }
-    ]
-  });
-  chestplate.nameTag = "Maxed Chestplate";
-  player.equip("Chest", chestplate);
+    // Chestplate
+    const chestplate = inventory.getItem(slot);
+    if (chestplate) {
+      chestplate.typeId = "diamond_chestplate";
+      chestplate.amount = 1;
+    }
+    inventory.setItem(slot++, chestplate);
 
-  // Leggings: Protection 4, Mending 1, Unbreaking 3, Swift Sneak 3
-  const leggings = new ItemStack("diamond_leggings", 1);
-  leggings.setProperty("minecraft:enchantments", {
-    enchantments: [
-      { id: "protection", level: 4 },
-      { id: "mending", level: 1 },
-      { id: "unbreaking", level: 3 },
-      { id: "swift_sneak", level: 3 }
-    ]
-  });
-  leggings.nameTag = "Maxed Leggings";
-  player.equip("Legs", leggings);
+    // Leggings
+    const leggings = inventory.getItem(slot);
+    if (leggings) {
+      leggings.typeId = "diamond_leggings";
+      leggings.amount = 1;
+    }
+    inventory.setItem(slot++, leggings);
 
-  // Boots: Protection 4, Mending 1, Unbreaking 3, Feather Falling 4, Depth Strider 3
-  const boots = new ItemStack("diamond_boots", 1);
-  boots.setProperty("minecraft:enchantments", {
-    enchantments: [
-      { id: "protection", level: 4 },
-      { id: "mending", level: 1 },
-      { id: "unbreaking", level: 3 },
-      { id: "feather_falling", level: 4 },
-      { id: "depth_strider", level: 3 }
-    ]
-  });
-  boots.nameTag = "Maxed Boots";
-  player.equip("Feet", boots);
+    // Boots
+    const boots = inventory.getItem(slot);
+    if (boots) {
+      boots.typeId = "diamond_boots";
+      boots.amount = 1;
+    }
+    inventory.setItem(slot++, boots);
 
-  // ===== WEAPONS =====
+    // ===== WEAPONS =====
 
-  // Sword: Sharpness 5, Mending 1, Unbreaking 3, Looting 3, Fire Aspect 2, Knockback 2
-  const sword = new ItemStack("diamond_sword", 1);
-  sword.setProperty("minecraft:enchantments", {
-    enchantments: [
-      { id: "sharpness", level: 5 },
-      { id: "mending", level: 1 },
-      { id: "unbreaking", level: 3 },
-      { id: "looting", level: 3 },
-      { id: "fire_aspect", level: 2 },
-      { id: "knockback", level: 2 }
-    ]
-  });
-  sword.nameTag = "Maxed Sword";
-  inventory.setItem(slot++, sword);
+    // Sword
+    const sword = inventory.getItem(slot);
+    if (sword) {
+      sword.typeId = "diamond_sword";
+      sword.amount = 1;
+    }
+    inventory.setItem(slot++, sword);
 
-  // Spear 1: Sharpness 5, Mending 1, Unbreaking 3, Looting 3, Fire Aspect 2, Knockback 2
-  const spear1 = new ItemStack("diamond_sword", 1);
-  spear1.setProperty("minecraft:enchantments", {
-    enchantments: [
-      { id: "sharpness", level: 5 },
-      { id: "mending", level: 1 },
-      { id: "unbreaking", level: 3 },
-      { id: "looting", level: 3 },
-      { id: "fire_aspect", level: 2 },
-      { id: "knockback", level: 2 }
-    ]
-  });
-  spear1.nameTag = "Maxed Spear 1";
-  inventory.setItem(slot++, spear1);
+    // Spear 1
+    const spear1 = inventory.getItem(slot);
+    if (spear1) {
+      spear1.typeId = "diamond_sword";
+      spear1.amount = 1;
+    }
+    inventory.setItem(slot++, spear1);
 
-  // Spear 2: Sharpness 5, Mending 1, Unbreaking 3, Looting 3, Fire Aspect 2, Knockback 2, Lunge 3
-  const spear2 = new ItemStack("diamond_sword", 1);
-  spear2.setProperty("minecraft:enchantments", {
-    enchantments: [
-      { id: "sharpness", level: 5 },
-      { id: "mending", level: 1 },
-      { id: "unbreaking", level: 3 },
-      { id: "looting", level: 3 },
-      { id: "fire_aspect", level: 2 },
-      { id: "knockback", level: 2 },
-      { id: "lunge", level: 3 }
-    ]
-  });
-  spear2.nameTag = "Maxed Spear 2 (Lunge)";
-  inventory.setItem(slot++, spear2);
+    // Spear 2
+    const spear2 = inventory.getItem(slot);
+    if (spear2) {
+      spear2.typeId = "diamond_sword";
+      spear2.amount = 1;
+    }
+    inventory.setItem(slot++, spear2);
 
-  // Bow: Power 5, Unbreaking 3, Flame 1, Infinity 1
-  const bow = new ItemStack("bow", 1);
-  bow.setProperty("minecraft:enchantments", {
-    enchantments: [
-      { id: "power", level: 5 },
-      { id: "unbreaking", level: 3 },
-      { id: "flame", level: 1 },
-      { id: "infinity", level: 1 }
-    ]
-  });
-  bow.nameTag = "Maxed Bow";
-  inventory.setItem(slot++, bow);
+    // Bow
+    const bow = inventory.getItem(slot);
+    if (bow) {
+      bow.typeId = "bow";
+      bow.amount = 1;
+    }
+    inventory.setItem(slot++, bow);
 
-  // ===== CONSUMABLES & UTILITIES =====
+    // ===== CONSUMABLES & UTILITIES =====
 
-  // Golden Apples x64
-  const goldApples = new ItemStack("golden_apple", 64);
-  inventory.setItem(slot++, goldApples);
+    // Golden Apples x64
+    const goldApples = inventory.getItem(slot);
+    if (goldApples) {
+      goldApples.typeId = "golden_apple";
+      goldApples.amount = 64;
+    }
+    inventory.setItem(slot++, goldApples);
 
-  // Carrots x64
-  const carrots = new ItemStack("carrot", 64);
-  inventory.setItem(slot++, carrots);
+    // Carrots x64
+    const carrots = inventory.getItem(slot);
+    if (carrots) {
+      carrots.typeId = "carrot";
+      carrots.amount = 64;
+    }
+    inventory.setItem(slot++, carrots);
 
-  // Splash Potion of Strength x16
-  const strengthPotion = new ItemStack("splash_potion", 16);
-  strengthPotion.setProperty("minecraft:potion_type", "strength");
-  inventory.setItem(slot++, strengthPotion);
+    // Splash Potion of Strength x16
+    const strengthPotion = inventory.getItem(slot);
+    if (strengthPotion) {
+      strengthPotion.typeId = "splash_potion";
+      strengthPotion.amount = 16;
+    }
+    inventory.setItem(slot++, strengthPotion);
 
-  // Splash Potion of Speed x16
-  const speedPotion = new ItemStack("splash_potion", 16);
-  speedPotion.setProperty("minecraft:potion_type", "swiftness");
-  inventory.setItem(slot++, speedPotion);
+    // Splash Potion of Speed x16
+    const speedPotion = inventory.getItem(slot);
+    if (speedPotion) {
+      speedPotion.typeId = "splash_potion";
+      speedPotion.amount = 16;
+    }
+    inventory.setItem(slot++, speedPotion);
 
-  // Potion of Slow Falling x16
-  const slowFallingPotion = new ItemStack("potion", 16);
-  slowFallingPotion.setProperty("minecraft:potion_type", "slow_falling");
-  inventory.setItem(slot++, slowFallingPotion);
+    // Potion of Slow Falling x16
+    const slowFallingPotion = inventory.getItem(slot);
+    if (slowFallingPotion) {
+      slowFallingPotion.typeId = "potion";
+      slowFallingPotion.amount = 16;
+    }
+    inventory.setItem(slot++, slowFallingPotion);
 
-  // Splash Potion of Healing x38
-  const healingPotion = new ItemStack("splash_potion", 38);
-  healingPotion.setProperty("minecraft:potion_type", "healing");
-  inventory.setItem(slot++, healingPotion);
+    // Splash Potion of Healing x38
+    const healingPotion = inventory.getItem(slot);
+    if (healingPotion) {
+      healingPotion.typeId = "splash_potion";
+      healingPotion.amount = 38;
+    }
+    inventory.setItem(slot++, healingPotion);
 
-  // Ender Pearls x64 (Stack 1)
-  const enderPearls1 = new ItemStack("ender_pearl", 64);
-  inventory.setItem(slot++, enderPearls1);
+    // Ender Pearls x64 (Stack 1)
+    const enderPearls1 = inventory.getItem(slot);
+    if (enderPearls1) {
+      enderPearls1.typeId = "ender_pearl";
+      enderPearls1.amount = 64;
+    }
+    inventory.setItem(slot++, enderPearls1);
 
-  // Ender Pearls x64 (Stack 2)
-  const enderPearls2 = new ItemStack("ender_pearl", 64);
-  inventory.setItem(slot++, enderPearls2);
+    // Ender Pearls x64 (Stack 2)
+    const enderPearls2 = inventory.getItem(slot);
+    if (enderPearls2) {
+      enderPearls2.typeId = "ender_pearl";
+      enderPearls2.amount = 64;
+    }
+    inventory.setItem(slot++, enderPearls2);
 
-  // Ender Pearls x64 (Stack 3)
-  const enderPearls3 = new ItemStack("ender_pearl", 64);
-  inventory.setItem(slot++, enderPearls3);
+    // Ender Pearls x64 (Stack 3)
+    const enderPearls3 = inventory.getItem(slot);
+    if (enderPearls3) {
+      enderPearls3.typeId = "ender_pearl";
+      enderPearls3.amount = 64;
+    }
+    inventory.setItem(slot++, enderPearls3);
 
-  // Harming Tipped Arrow x1
-  const harmingArrow = new ItemStack("arrow", 1);
-  harmingArrow.setProperty("minecraft:potion_type", "harming");
-  inventory.setItem(slot++, harmingArrow);
+    // Harming Tipped Arrow x1
+    const harmingArrow = inventory.getItem(slot);
+    if (harmingArrow) {
+      harmingArrow.typeId = "arrow";
+      harmingArrow.amount = 1;
+    }
+    inventory.setItem(slot++, harmingArrow);
 
-  // Totems of Undying x5
-  const totems = new ItemStack("totem_of_undying", 5);
-  inventory.setItem(slot++, totems);
+    // Totems of Undying x5
+    const totems = inventory.getItem(slot);
+    if (totems) {
+      totems.typeId = "totem_of_undying";
+      totems.amount = 5;
+    }
+    inventory.setItem(slot++, totems);
 
-  // Ender Chest x1
-  const enderChest = new ItemStack("ender_chest", 1);
-  inventory.setItem(slot++, enderChest);
+    // Ender Chest x1
+    const enderChest = inventory.getItem(slot);
+    if (enderChest) {
+      enderChest.typeId = "ender_chest";
+      enderChest.amount = 1;
+    }
+    inventory.setItem(slot++, enderChest);
 
-  // ===== DRAGON SLAYING UTILITIES =====
+    // ===== DRAGON SLAYING UTILITIES =====
 
-  // Obsidian x32
-  const obsidian = new ItemStack("obsidian", 32);
-  inventory.setItem(slot++, obsidian);
+    // Obsidian x32
+    const obsidian = inventory.getItem(slot);
+    if (obsidian) {
+      obsidian.typeId = "obsidian";
+      obsidian.amount = 32;
+    }
+    inventory.setItem(slot++, obsidian);
 
-  // Healing Potions x16
-  const healingPotions = new ItemStack("potion", 16);
-  healingPotions.setProperty("minecraft:potion_type", "healing");
-  inventory.setItem(slot++, healingPotions);
+    // Healing Potions x16
+    const healingPotions = inventory.getItem(slot);
+    if (healingPotions) {
+      healingPotions.typeId = "potion";
+      healingPotions.amount = 16;
+    }
+    inventory.setItem(slot++, healingPotions);
 
-  // Milk Bucket x4
-  const milkBucket = new ItemStack("milk_bucket", 4);
-  inventory.setItem(slot++, milkBucket);
+    // Milk Bucket x4
+    const milkBucket = inventory.getItem(slot);
+    if (milkBucket) {
+      milkBucket.typeId = "milk_bucket";
+      milkBucket.amount = 4;
+    }
+    inventory.setItem(slot++, milkBucket);
 
-  // Pumpkin x1 (Enderman protection)
-  const pumpkin = new ItemStack("pumpkin", 1);
-  inventory.setItem(slot++, pumpkin);
+    // Pumpkin x1
+    const pumpkin = inventory.getItem(slot);
+    if (pumpkin) {
+      pumpkin.typeId = "pumpkin";
+      pumpkin.amount = 1;
+    }
+    inventory.setItem(slot++, pumpkin);
 
-  // Success message
-  player.onScreenDisplay.setActionBar("✓ Maxed Out Gear Pack loaded! Ready to slay the Ender Dragon on Hardcore!");
+    // Success message
+    player.onScreenDisplay.setActionBar("✓ Maxed Out Gear Pack loaded! Ready to slay the Ender Dragon on Hardcore!");
+  } catch (error) {
+    console.error("Error in giveMaxedGear:", error);
+  }
 }
 
-// Export for module loading
 export { giveMaxedGear };
