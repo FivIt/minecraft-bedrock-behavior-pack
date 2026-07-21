@@ -41,25 +41,16 @@ give @s golden_apple 64
 # Carrots x64
 give @s carrot 64
 
-# Splash Potion of Strength x1 (potions don't stack in Bedrock)
-give @s splash_potion 1
+# Potion of Healing II x5
+give @s potion 5 22
 
-# Splash Potion of Speed x1
-give @s splash_potion 1
+# Potion of Swiftness (Extended) x5
+give @s potion 5 15
 
-# Potion of Slow Falling x1
-give @s potion 1
+# Potion of Strength II x5
+give @s potion 5 33
 
-# Splash Potion of Healing x1
-give @s splash_potion 1
-
-# Ender Pearls x64 (Stack 1)
-give @s ender_pearl 64
-
-# Ender Pearls x64 (Stack 2)
-give @s ender_pearl 64
-
-# Ender Pearls x64 (Stack 3)
+# Ender Pearls x64 (Stack 1 only)
 give @s ender_pearl 64
 
 # Arrow x64
@@ -75,9 +66,6 @@ give @s ender_chest 1
 
 # Blocks for building (Obsidian for safety)
 give @s obsidian 32
-
-# Healing Potions for backup x1
-give @s potion 1
 
 # Milk bucket for potion effects
 give @s milk_bucket 4
