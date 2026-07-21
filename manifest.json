@@ -9,8 +9,8 @@
   },
   "modules": [
     {
-      "description": "Maxed Out Gear Module",
-      "type": "commands",
+      "description": "Maxed Out Gear Data Module",
+      "type": "data",
       "uuid": "a2f1d8e5-9c4b-4e7d-8a3f-6e2c9b1a5d7f",
       "version": [1, 0, 0]
     },
