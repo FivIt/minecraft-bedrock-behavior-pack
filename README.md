@@ -2,13 +2,16 @@
 
 A Minecraft Bedrock behavior pack for practicing Ender Dragon fights. One command drops a full netherite loadout into exact inventory slots, already enchanted and already equipped, no holding items, no manual enchanting 
 <div align="center">
-  <img src="https://img.shields.io/badge/Made%20with-Claude-d97757" alt=Made with claude>
+  
+<p align="center">
+  <a href="https://claude.ai/"><img src="https://img.shields.io/badge/Made%20with-Claude-d97757" alt=Made with claude></a>
   <br>
   <img src="image/Dragon-1.png" alt="Dragon">
 </div>
-
 <p align="center">
-  <a href="https://www.printables.com/model/1335964-ender-dragon-egg-assemblehuevo-ender-dragon-minecr/related">pack_icon</a>
+  <a href="https://www.printables.com/model/1335964-ender-dragon-egg-assemblehuevo-ender-dragon-minecr/related">
+    <img src="https://img.shields.io/badge/Pack%20Icon-source-blue" alt="Pack Icon">
+  </a>
 </p>
 
 ## Install
@@ -65,6 +68,3 @@ or Place one command block:
 <p align="center">
   <strong>Author's note</strong>: <em>The code is free to use, it's for personal use. I didnt put a hand coding its just Claude's work and I just put ideas and words for him, so feel free to use this and edit any thing you want.</em>
 </p>
-
-<p align="center">
-  <a href="https://claude.ai/">Claude</a>
