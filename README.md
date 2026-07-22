@@ -1,8 +1,15 @@
 # DragonSlimmer Gear Pack
 
 A Minecraft Bedrock behavior pack for practicing Ender Dragon fights. One command drops a full netherite loadout into exact inventory slots, already enchanted and already equipped, no holding items, no manual enchanting 
+<div align="center">
+  <img src="https://img.shields.io/badge/Made%20with-Claude-d97757" alt=Made with claude>
+  <br>
+  <img src="image/Dragon-1.png" alt="Dragon">
+</div>
 
-![Made with Claude](https://img.shields.io/badge/Made%20with-Claude-d97757)
+<p align="center">
+  <a href="https://www.printables.com/model/1335964-ender-dragon-egg-assemblehuevo-ender-dragon-minecr/related">pack_icon</a>
+</p>
 
 ## Install
 
@@ -21,9 +28,12 @@ or Place one command block:
 - Command: `/scriptevent dragon:gear`
 - A button or lever on top
 
-Press it once. Armor and offhand totem equip automatically, everything else lands in the exact slot listed below.
-
-If the script module fails to load (you'll see a "missing dependency" error), the pack falls back to a manual 9-button setup in `functions/`, one button per item, hold it and press the matching button to enchant. Slower, but doesn't depend on the scripting API.
+<p align="center">
+  Press it once. Armor and offhand totem equip automatically, everything else lands in the exact slot listed below.
+</p>
+<p allgn="center">
+  If the script module fails to load (you'll see a "missing dependency" error), the pack falls back to a manual 9-button setup in "functions/", one button per item, hold it and press the matching button to enchant. Slower, but doesn't depend on the scripting API.
+</p>
 
 ## Loadout
 
@@ -50,8 +60,10 @@ If the script module fails to load (you'll see a "missing dependency" error), th
 - The Carved Pumpkin isn't equipped by default since it'd replace the enchanted helmet. Swap it on manually if endermen are piling up.
 - Both spears exist because Lunge and Mending can't go on the same item.
 
-**Author's note**: *The code is free to use, I didnt put a hand coding its just Claude's work and I just put ideas and words for him, so feel free to use this and edit any thing you want*
 
-*[Claude](https://claude.ai/)*
+<p align="center">
+  **Author's note**: *The code is free to use, I didnt put a hand coding its just Claude's work and I just put ideas and words for him, so feel free to use this and edit any thing you want*
+</p>
 
-*[pack_Icon](https://www.printables.com/model/1335964-ender-dragon-egg-assemblehuevo-ender-dragon-minecr/related)*
+<p align="center">
+  <a href="https://claude.ai/">Claude</a>
