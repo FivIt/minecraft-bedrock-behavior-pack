@@ -50,7 +50,7 @@ or Place one command block:
 | Feet | Netherite Boots | Protection IV, Unbreaking III, Mending I, Feather Falling IV, Depth Strider III |
 | Offhand | Totem of Undying | — |
 
-**Row 1 (hotbar)**: Netherite Sword (Sharpness V, Unbreaking III, Mending I, Looting III, Fire Aspect II, Knockback II) · Spear — Lunge III build (no Mending, they conflict) · Spear — Mending build · Bow (Power V, Unbreaking III, Flame I, Infinity I) · Golden Carrot ×64 · Golden Apple ×64 · Ender Pearl ×16 · Totem (backup) · Snow ×64
+**Row 1 (hotbar)**: Netherite Sword (Sharpness V, Unbreaking III, Mending I, Looting III, Fire Aspect II, Knockback II) Netherite Pickaxe (Efficiency V, Unbreaking III, Mending I, Silk Touch) · Spear — Lunge III build · Bow (Power V, Unbreaking III, Flame I, Infinity I) · Golden Carrot ×64 · Golden Apple ×64 · Ender Pearl ×16 · Totem (backup) · Snow ×64
 
 **Row 2**: Ender Pearl ×16 ×2 · Snow ×64 ×3 · Totem (backup) ×3 · Netherite Shovel
 
