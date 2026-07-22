@@ -12,13 +12,13 @@ A Minecraft Bedrock behavior pack for practicing Ender Dragon fights. One comman
 4. Turn **Cheats** on for that world. Required, both the command block and the script depend on it.
 
 ## To Use
-- Chat `/scriptevent darwin:gear`
+- Chat `/scriptevent dragon:gear`
 
 or Place one command block:
 
 - Type: Impulse
 - Needs Redstone: ON
-- Command: `/scriptevent darwin:gear`
+- Command: `/scriptevent dragon:gear`
 - A button or lever on top
 
 Press it once. Armor and offhand totem equip automatically, everything else lands in the exact slot listed below.
@@ -51,3 +51,7 @@ If the script module fails to load (you'll see a "missing dependency" error), th
 - Both spears exist because Lunge and Mending can't go on the same item.
 
 **Author's note**: *The code is free to use, I didnt put a hand coding its just Claude's work and I just put ideas and words for him, so feel free to use this and edit any thing you want*
+
+*[Claude](https://claude.ai/)*
+
+*[pack_Icon](https://www.printables.com/model/1335964-ender-dragon-egg-assemblehuevo-ender-dragon-minecr/related)*
