@@ -31,7 +31,7 @@ or Place one command block:
 <p align="center">
   Press it once. Armor and offhand totem equip automatically, everything else lands in the exact slot listed below.
 </p>
-<p allgn="center">
+<p align="center">
   If the script module fails to load (you'll see a "missing dependency" error), the pack falls back to a manual 9-button setup in "functions/", one button per item, hold it and press the matching button to enchant. Slower, but doesn't depend on the scripting API.
 </p>
 
